@@ -1,0 +1,7 @@
+
+查询请求结果进入`https://cloud.google.com/speech-to-text/docs/reference/rest/v1/operations/get`，
+同样点`TRY IT!`，在`name`填入之前存下的代码，然后`EXECUTE`。
+此时应当有结果返回，结果中有百分比。隔一段时间之后，应当有文字输出。
+##处理文字
+把之前的输出全部存下来，然后粘贴进word，通过替换来提取有用的信息。
+

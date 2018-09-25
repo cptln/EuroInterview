@@ -1,9 +1,9 @@
 
-#进入`https://console.cloud.google.com/storage`
-#新建bucket，上传文件。若 bucket名为`eurointer`，文件名为`01.wav`
+进入`https://console.cloud.google.com/storage`
+新建bucket，上传文件。若 bucket名为`eurointer`，文件名为`01.wav`
 资源名称将为`gs://eurointer/01.wav`
 
-Request body
+#Request body
 
 {
 "audio": {
@@ -18,11 +18,11 @@ Request body
 }
 }
 
-Result
+#Result
   "name": "6526814269621978687"
 
 
-Repeat
+#Repeat
 
 gs://eurointer/02.wav
   "name": "375970847389298480"

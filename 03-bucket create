@@ -1,7 +1,14 @@
 
-进入`https://console.cloud.google.com/storage`
+#进入`https://console.cloud.google.com/storage`
 新建bucket，上传文件。若 bucket名为`eurointer`，文件名为`01.wav`
 资源名称将为`gs://eurointer/01.wav`
+
+#创建异步请求进入`https://cloud.google.com/speech-to-text/docs/reference/rest/v1/speech/longrunningrecognize`
+在右侧点`TRY IT!`，通过点加号输入请求，例子如下
+具体参数意思见该页面，注意`uri`为上面上传的资源名称；
+`languageCode`在这里有列出:`https://cloud.google.com/speech-to-text/docs/languages`；
+encoding和sampleRateHertz应当和第一步中的一致；其余参数意义见页面左侧。
+之后点击下面的`EXECUTE`，依照提示授权，之后会返回一串数字/代码，将`name`后面的代码复制保存好。
 
 #Request body
 

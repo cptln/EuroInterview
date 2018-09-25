@@ -1,0 +1,20 @@
+#### 用`ffmpeg`将源文件转换为WAV文件，线性PCM，16比特，小端，单声道，重采样到16KHz。
+
+ffmpeg -i /Users/YiShen/Desktop/PBCSF/eurointer/01.m4a -acodec pcm_s16le -ac 1 -ar 16000 /Users/YiShen/Desktop/PBCSF/eurointer/01.wav
+ffmpeg -i /Users/YiShen/Desktop/PBCSF/eurointer/02.m4a -acodec pcm_s16le -ac 1 -ar 16000 /Users/YiShen/Desktop/PBCSF/eurointer/02.wav
+ffmpeg -i /Users/YiShen/Desktop/PBCSF/eurointer/03.m4a -acodec pcm_s16le -ac 1 -ar 16000 /Users/YiShen/Desktop/PBCSF/eurointer/03.wav
+ffmpeg -i /Users/YiShen/Desktop/PBCSF/eurointer/04.m4a -acodec pcm_s16le -ac 1 -ar 16000 /Users/YiShen/Desktop/PBCSF/eurointer/04.wav
+ffmpeg -i /Users/YiShen/Desktop/PBCSF/eurointer/05.m4a -acodec pcm_s16le -ac 1 -ar 16000 /Users/YiShen/Desktop/PBCSF/eurointer/05.wav
+ffmpeg -i /Users/YiShen/Desktop/PBCSF/eurointer/06.m4a -acodec pcm_s16le -ac 1 -ar 16000 /Users/YiShen/Desktop/PBCSF/eurointer/06.wav
+ffmpeg -i /Users/YiShen/Desktop/PBCSF/eurointer/07.m4a -acodec pcm_s16le -ac 1 -ar 16000 /Users/YiShen/Desktop/PBCSF/eurointer/07.wav
+ffmpeg -i /Users/YiShen/Desktop/PBCSF/eurointer/08.m4a -acodec pcm_s16le -ac 1 -ar 16000 /Users/YiShen/Desktop/PBCSF/eurointer/08.wav
+ffmpeg -i /Users/YiShen/Desktop/PBCSF/eurointer/09.m4a -acodec pcm_s16le -ac 1 -ar 16000 /Users/YiShen/Desktop/PBCSF/eurointer/09.wav
+ffmpeg -i /Users/YiShen/Desktop/PBCSF/eurointer/10.m4a -acodec pcm_s16le -ac 1 -ar 16000 /Users/YiShen/Desktop/PBCSF/eurointer/10.wav
+ffmpeg -i /Users/YiShen/Desktop/PBCSF/eurointer/11.m4a -acodec pcm_s16le -ac 1 -ar 16000 /Users/YiShen/Desktop/PBCSF/eurointer/11.wav
+ffmpeg -i /Users/YiShen/Desktop/PBCSF/eurointer/12.m4a -acodec pcm_s16le -ac 1 -ar 16000 /Users/YiShen/Desktop/PBCSF/eurointer/12.wav
+
+
+注1: Google文档中说如果原采样率不是16KHz的话，建议不要重采样，保留采样率在8KHz - 48KHz之间即可。此处之后可试验。
+注2: Google文档中说WAV和FLAC文件可直接上传，不必设定采样率，但实践中发现不可。此处担心44字节的WAV头会被当作录音。这个问题可以通过`sox -r 16k -b 16 -L -c 1 <文件名>.wav <文件名>.raw`解决，输出的RAW文件不含WAVE头。然而，因为44字节为偶数，即使多出22个杂音样本问题应该也不大。
+注3: ffmpeg和sox都可以通过homebrew下载。
+注4: 录音文件应当小于三个小时。

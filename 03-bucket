@@ -1,0 +1,57 @@
+
+#进入`https://console.cloud.google.com/storage`
+#新建bucket，上传文件。若 bucket名为`eurointer`，文件名为`01.wav`
+资源名称将为`gs://eurointer/01.wav`
+
+Request body
+{
+"audio": {
+"uri": "gs://eurointer/01.wav"
+}
+"config": {
+"languageCode": “en-GB”,
+"encoding": "LINEAR16",
+"sampleRateHertz": 16000,
+"enableAutomaticPunctuation": true,
+"enableWordTimeOffsets": true
+}
+}
+
+Result
+  "name": "6526814269621978687"
+
+Repeat
+
+gs://eurointer/02.wav
+  "name": "375970847389298480"
+  
+gs://eurointer/03.wav
+  "name": "7508951958896244870"
+  
+gs://eurointer/04.wav
+  "name": "1537072403959112556"
+  
+gs://eurointer/05.wav 
+  "name": "3460293389251044318"
+  
+gs://eurointer/06.wav
+  "name": "3477443690607470209"
+
+gs://eurointer/07.wav
+  "name": "7673036734661173706"
+
+gs://eurointer/08.wav
+  "name": "2807248856987394788"
+
+gs://eurointer/09.wav
+  "name": "2121264829445663986"
+
+gs://eurointer/10.wav
+  "name": "8174962578338689639"
+
+gs://eurointer/11.wav
+ "name": "5300194203359052501"
+
+gs://eurointer/12.wav
+  "name": "4216459774424932729"
+

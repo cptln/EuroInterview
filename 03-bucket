@@ -4,6 +4,7 @@
 资源名称将为`gs://eurointer/01.wav`
 
 Request body
+
 {
 "audio": {
 "uri": "gs://eurointer/01.wav"
@@ -19,6 +20,7 @@ Request body
 
 Result
   "name": "6526814269621978687"
+
 
 Repeat
 

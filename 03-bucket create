@@ -21,7 +21,8 @@ encoding和sampleRateHertz应当和第一步中的一致；其余参数意义见
 "encoding": "LINEAR16",
 "sampleRateHertz": 16000,
 "enableAutomaticPunctuation": true,
-"enableWordTimeOffsets": true
+"enableWordTimeOffsets": false
+#如果打开时间选项会按每秒分割出单词
 }
 }
 

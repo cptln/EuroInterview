@@ -17,7 +17,8 @@ encoding和sampleRateHertz应当和第一步中的一致；其余参数意义见
 "uri": "gs://eurointer/01.wav"
 }
 "config": {
-"languageCode": “en-GB”,
+"languageCode": "en-GB",
+#参考language code, 如中文则是zh
 "encoding": "LINEAR16",
 "sampleRateHertz": 16000,
 "enableAutomaticPunctuation": true,
